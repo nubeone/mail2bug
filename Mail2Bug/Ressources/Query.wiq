@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkItemQuery Version="1">
+	<TeamFoundationServer>http://localhost:8080/tfs/DefaultCollection</TeamFoundationServer>
+	<TeamProject>Portfolio</TeamProject>
+	<Wiql>SELECT [System.Id], [System.Title] FROM WorkItems WHERE [System.WorkItemType] &lt;&gt; ''  AND ([System.CreatedBy] = @Me) AND  [System.ChangedDate] &gt; @today - 60 ORDER BY [System.Id] </Wiql>
+</WorkItemQuery>
