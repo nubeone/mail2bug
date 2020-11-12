@@ -75,7 +75,7 @@
              with DPAPI - use the DpapiTool.exe from the Tools subfolder to create one. Note that the tool needs to be
              run under the same credentials that mail2bug will run with, otherwise it won't be able to decrypt the
              contents. -->
-        <EWSPasswordFile>.\Resources\Portfolio\password.bin</EWSPasswordFile>
+        <EWSPasswordFile>.\Resources\password.bin</EWSPasswordFile>
 
         <!-- Warning: Changing this on an existing instance will break links with bugs that it already created. -->
         <UseConversationGuidOnly>true</UseConversationGuidOnly>
