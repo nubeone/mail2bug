@@ -36,8 +36,8 @@
           <ApplicationIdEnvironmentVariableName>DIRECTORY_APPLICATION_ID</ApplicationIdEnvironmentVariableName>
           <ApplicationSecretEnvironmentVariableName>DIRECTORY_APPLICATION_SECRET</ApplicationSecretEnvironmentVariableName>
         </EWSKeyVaultSecret>
-        <EWSMailboxAddress>issue@3imedia.de</EWSMailboxAddress>
-        <EWSUsername>3imedia\issue</EWSUsername>
+        <EWSMailboxAddress>incident@3imedia.de</EWSMailboxAddress>
+        <EWSUsername>3imedia\incident</EWSUsername>
         <ServiceType>EWSByRecipients</ServiceType>
         <SendAckEmails>true</SendAckEmails>
         <AckEmailsRecipientsAll>true</AckEmailsRecipientsAll>
