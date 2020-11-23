@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using log4net;
 using Microsoft.Exchange.WebServices.Data;
 
@@ -88,14 +89,17 @@ namespace Mail2Bug.Email.EWS
                 Timeout = 60000
             };
 
-            exchangeService.AutodiscoverUrl(
+            /*exchangeService.AutodiscoverUrl(
                 credentials.EmailAddress,
                 x =>
                 {
                     Logger.DebugFormat("Following redirection for EWS autodiscover: {0}", x);
                     return true;
                 }
-                );
+                );*/
+
+            // https://github.com/microsoft/mail2bug/issues/64
+            exchangeService.Url = new Uri("https://webmail.3imedia.de/EWS/Exchange.asmx");
 
             Logger.DebugFormat("Service URL: {0}", exchangeService.Url);
 
